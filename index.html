@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Транспортные средства</title>
+      <!-- Подключение стилей -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+      <!-- Подключение скрипта и библиотеки(чтобы удобнее было кнопки делать) -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+      <!-- Основной родитеьский элемент -->
+      <div class = "transport-contaner">
+            <!-- Дочерние элементы, главный из них -->
+      	<div class = "transport"><h1>Транспорт</h1>
+      		<button class = "transport-all-properties">Свойства</button>
+      		<button class = "types">Типы транспорта</button>
+      	</div>
+           <!--  Неглавные и скрытые изначально дчерние элементы -->
+            <div class = "auto"><h1>Автомобили</h1>
+                  <button class = "transport-all-properties">Свойства</button>
+            </div>
+            <div class = "plane"><h1>Самолеты</h1>
+                   <button class = "transport-all-properties">Свойства</button>
+            </div>
+              <div class = "ship"><h1>Корабли</h1>
+                    <button class = "transport-all-properties">Свойства</button>
+             </div>
+      </div>
+</body>
+</html>

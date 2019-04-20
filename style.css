@@ -1,0 +1,34 @@
+/*Основной фон страницы*/
+body{
+	background-color:#202020;
+}
+
+/*Стиль шрифтов*/
+.transport-contaner h1 {
+    font-size: 35px;
+    color: #778899;
+}
+
+/*Расположение и цвет главного родительского элемента*/
+.transport-contaner{
+	margin:0 auto auto;
+	width: 85%;
+	background-color:#333333;
+}
+
+/*Цвет и размер шрифта вызываемых элементов*/
+.transport-all{
+	color:  #778899;
+	 font-size: 20px;
+}
+
+/*Начальная "невидимость" дочерних вызываемых кнопкой элементов*/
+.auto{
+	visibility: hidden;
+}
+.plane{
+	visibility: hidden;
+}
+.ship{
+	visibility: hidden;
+}
