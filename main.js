@@ -1,38 +1,39 @@
-//Основная функция-конструктор
-function Transport(use,classification,engineType) {
-	this.use = 'Передвижение';
-	this.classification = 'Транспортное средство';
-	this.engineType = 'Внутреннего сгорания'; 
-};
-
+//Родительский класс
+class Transport{
+  constructor(use,classification,engineType){
+    this.use = 'Передвижение';
+    this.classification = 'Транспортное средство';
+    this.engineType = 'Внутреннего сгорания'; 
+  }
+}
 let AllTransport = new Transport();
-
-//Дочерняя фунция-конструктор
-function Auto(use,classification,engineType){
-	Transport.call(this);
-	this.environment = 'Земля';
-	this.engineType = 'Электрический или внутреннего сгорания';
+//Дочерний класс
+class Auto extends Transport{
+  constructor(use,classification,engineType){
+    super();
+  this.environment = 'Земля';
+  this.engineType = 'Электрический или внутреннего сгорания';
+  }
 }
-
 let AutoTransport = new Auto();
-
-//Дочерняя функция-конструктор
-function Plane(use,classification,engineType){
-	Transport.call(this);
-	this.environment = 'Воздух';
-	this.engineType = 'Внутреннего сгорания или реактивный';
-	this.flightAltitude = '9-12 киллометров'
+//Дочерний класс
+class Plane extends Transport{
+  constructor(use,classification,engineType){
+    super();
+  this.environment = 'Воздух';
+  this.engineType = 'Внутреннего сгорания или реактивный';
+  this.flightAltitude = '9-12 киллометров'
+  }
 }
-
 let AirTransport = new Plane();
-
-//Дочерняя функция-консруктор
-function Ship(use,classification,engineType){
-	Transport.call(this);
-	this.environment = 'Вода';
-	this.displacement = 'от 27 тонн';
+//Дочерний класс
+class Ship extends Transport{
+  constructor(use,classification,engineType){
+    super();
+  this.environment = 'Вода';
+  this.displacement = 'от 27 тонн';
+  }
 }
-
 let WaterTransport = new Ship();
 
 
